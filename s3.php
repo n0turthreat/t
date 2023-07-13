@@ -12,13 +12,7 @@ $s3 = new S3Client([
     ],
 ]);
 
-$buckets = $s3->listBuckets();
-foreach ($buckets['Buckets'] as $bucket) {
-    echo $bucket['Name'] . "\n";
-}
-
-$bucket = 'esb-loop-lite';
-
+$bucket = 'esb-bucket';
 
 try {
     $results = $s3->getPaginator('ListObjects', [
