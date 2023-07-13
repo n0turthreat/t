@@ -17,7 +17,7 @@ foreach ($buckets['Buckets'] as $bucket) {
     echo $bucket['Name'] . "\n";
 }
 
-$bucket = 'esb-bucket';
+$bucket = 'esb-loop-lite';
 
 
 try {
